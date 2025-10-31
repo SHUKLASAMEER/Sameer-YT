@@ -1,9 +1,13 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>YouTube Clone</title>
     <link rel="stylesheet" href="style.css">
+    <script src="side-bar.js" defer></script>
 </head>
 <body>
     <nav class="flex-div">
@@ -28,21 +32,25 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-        <a href="#"><img src="home.png"><p>Home</p></a>
-        <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl"><img src="explore.png"><p>Trending</p></a>
-        <a href="#"><img src="subscriprion.png"><p>Subscription</p></a>
-        <hr>
-        <a href="#"><img src="library.png"><p>Library</p></a>
-        <a href="https://www.youtube.com/feed/history"><img src="history.png"><p>History</p></a>
-        <a href="#"><img src="playlist.png"><p>Playlist</p></a>
-        <a href="#"><img src="messages.png"><p>Messages</p></a>
-        <a href="#"><img src="show-more.png"><p>Show more</p></a>
-        <hr>
-        <h3>SUBSCRIBED</h3>
-        <a href="https://www.youtube.com/@PhysicsWallah"><img src="simon.png"><p>Physics Wallah &bull; </p></a>
-        <a href="https://www.youtube.com/@AmanDhattarwal"><img src="tom.png"><p>Aman Dhattarwal &bull;</p></a>
-        <a href="https://www.youtube.com/@ApnaCollegeOfficial"><img src="megan.png"><p>Apna College</p></a>
-        <a href="https://www.youtube.com/@gajendrapurohit"><img src="Jack.png"><p>Dr Gajendra Purohit</p></a>
+        <div class="shortcut-links">
+            <a href="#"><img src="home.png"><p>Home</p></a>
+            <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl"><img src="explore.png"><p>Trending</p></a>
+            <a href="#"><img src="subscriprion.png"><p>Subscription</p></a>
+            <hr>
+            <a href="#"><img src="library.png"><p>Library</p></a>
+            <a href="https://www.youtube.com/feed/history"><img src="history.png"><p>History</p></a>
+            <a href="#"><img src="playlist.png"><p>Playlist</p></a>
+            <a href="#"><img src="messages.png"><p>Messages</p></a>
+            <a href="#"><img src="show-more.png"><p>Show more</p></a>
+            <hr>
+        </div>
+        <div class="subscribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href="https://www.youtube.com/@PhysicsWallah"><img src="simon.png"><p>Physics Wallah &bull; </p></a>
+            <a href="https://www.youtube.com/@AmanDhattarwal"><img src="tom.png"><p>Aman Dhattarwal &bull;</p></a>
+            <a href="https://www.youtube.com/@ApnaCollegeOfficial"><img src="megan.png"><p>Apna College</p></a>
+            <a href="https://www.youtube.com/@gajendrapurohit"><img src="Jack.png"><p>Dr Gajendra Purohit</p></a>
+        </div>
     </div>
 
     <!-- Main Content -->
@@ -53,293 +61,197 @@
 
         <div class="list-container">
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=AETFvQonfV8"><img src="HanmanChalisa.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=AETFvQonfV8"><img src="HanmanChalisa.png" class="thumbnail" alt="Hanuman Chalisa"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Hanuman Chalisa</a>
+                        <p>10M views &bull; 2 days ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=1B048qCYGJY"><img src="Kishori Kux.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=1B048qCYGJY"><img src="Kishori Kux.png" class="thumbnail" alt="Kishori Kux"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Kishori Kux</a>
+                        <p>5M views &bull; 1 week ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=qXw8sCwBLVE"><img src="MereSarkar.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=qXw8sCwBLVE"><img src="MereSarkar.png" class="thumbnail" alt="Mere Sarkar"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Mere Sarkar</a>
+                        <p>8M views &bull; 3 days ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=mjixdc3g9Cs"><img src="meri vinti.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=mjixdc3g9Cs"><img src="meri vinti.png" class="thumbnail" alt="Meri Vinti"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Meri Vinti</a>
+                        <p>12M views &bull; 5 days ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=r6SbfF9FjTg"><img src="Aarambh.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=r6SbfF9FjTg"><img src="Aarambh.png" class="thumbnail" alt="Aarambh"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Aarambh</a>
+                        <p>7M views &bull; 1 week ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=h1lT6cxwsPw"><img src="bajrang baad.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=h1lT6cxwsPw"><img src="bajrang baad.png" class="thumbnail" alt="Bajrang Baad"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Bajrang Baad</a>
+                        <p>9M views &bull; 4 days ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=Yuex2EnsGiY"><img src="jay ganesh.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=Yuex2EnsGiY"><img src="jay ganesh.png" class="thumbnail" alt="Jay Ganesh"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Jay Ganesh</a>
+                        <p>6M views &bull; 2 weeks ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=1qmPNot9NJs"><img src="shreekrishna.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=1qmPNot9NJs"><img src="shreekrishna.png" class="thumbnail" alt="Shree Krishna"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Shree Krishna</a>
+                        <p>11M views &bull; 1 day ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=gaJR15qWTDA"><img src="bholabhandari.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=gaJR15qWTDA"><img src="bholabhandari.png" class="thumbnail" alt="Bhola Bhandari"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Bhola Bhandari</a>
+                        <p>4M views &bull; 3 weeks ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=tBgNpc39FJk"><img src="adhurammadhuram.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=tBgNpc39FJk"><img src="adhurammadhuram.png" class="thumbnail" alt="Adhura Madhuram"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Adhura Madhuram</a>
+                        <p>13M views &bull; 6 days ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=MB9m98cvq88"><img src="chotikishori.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=MB9m98cvq88"><img src="chotikishori.png" class="thumbnail" alt="Choti Kishori"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Choti Kishori</a>
+                        <p>3M views &bull; 1 month ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=GNXL4dm49BI"><img src="tusumiran.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=GNXL4dm49BI"><img src="tusumiran.png" class="thumbnail" alt="Tu Sumiran"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Tu Sumiran</a>
+                        <p>15M views &bull; 2 days ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=igJHuojQHeo"><img src="shrreramchandra.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=igJHuojQHeo"><img src="shrreramchandra.png" class="thumbnail" alt="Shree Ram Chandra"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Shree Ram Chandra</a>
+                        <p>10M views &bull; 1 week ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=Feoea8FQTI0"><img src="tumpremho.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=Feoea8FQTI0"><img src="tumpremho.png" class="thumbnail" alt="Tum Prem Ho"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Tum Prem Ho</a>
+                        <p>14M views &bull; 4 days ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=323VD1z5CQc"><img src="vrindavanjaungi.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=323VD1z5CQc"><img src="vrindavanjaungi.png" class="thumbnail" alt="Vrindavan Jaungi"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Vrindavan Jaungi</a>
+                        <p>5M views &bull; 2 weeks ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=VCR5dQvhg_c"><img src="bolsuva.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=VCR5dQvhg_c"><img src="bolsuva.png" class="thumbnail" alt="Bol Suva"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Bol Suva</a>
+                        <p>7M views &bull; 3 days ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=qmqInizmbqI"><img src="ramaayenge.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=qmqInizmbqI"><img src="ramaayenge.png" class="thumbnail" alt="Ram Aayenge"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Ram Aayenge</a>
+                        <p>16M views &bull; 1 day ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=kYFriF5zHMM"><img src="shivamrit.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/watch?v=kYFriF5zHMM"><img src="shivamrit.png" class="thumbnail" alt="Shiv Amrit"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Shiv Amrit</a>
+                        <p>9M views &bull; 5 days ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
             <div class="vid-list">
-                <a href="T Series Bhakti Sagar"><img src="agrnathdekhoge.png" class="thumbnail"></a>
+                <a href="https://www.youtube.com/@TSeriesBhaktiSagar"><img src="agrnathdekhoge.png" class="thumbnail" alt="Agra Nath Dekhoge"></a>
+                <div class="flex-div">
+                    <div class="vid-info">
+                        <a href="#">Agra Nath Dekhoge</a>
+                        <p>12M views &bull; 1 week ago</p>
+                    </div>
+                    <img src="more.png" class="settings" alt="">
+                </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>YouTube Clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="flex-div">
-        <div class="nav-left flex-div">
-            <img src="menu.png" class="menu-icon" alt="">
-            <a href="https://www.youtube.com/"><img src="logo.png" class="logo" alt=""></a>
-        </div>
-        <div class="nav-middle flex-div">
-            <div class="search-box flex-div">
-                <input type="text" placeholder="Search">
-                <img src="search.png" alt="">
-            </div>
-            <a href="https://www.youtube.com/"><img src="voice-search.png" class="mic-icon" alt=""></a>
-        </div>
-        <div class="nav-right flex-div">
-            <img src="upload.png" alt="">
-            <img src="more.png" alt="">
-            <img src="notification.png" alt="">
-            <a href="https://www.youtube.com/@sameershukla2355"><img src="nilava.jpeg" class="user-icon" alt=""></a>
-        </div>
-    </nav>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="#"><img src="home.png"><p>Home</p></a>
-        <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl"><img src="explore.png"><p>Trending</p></a>
-        <a href="#"><img src="subscriprion.png"><p>Subscription</p></a>
-        <hr>
-        <a href="#"><img src="library.png"><p>Library</p></a>
-        <a href="https://www.youtube.com/feed/history"><img src="history.png"><p>History</p></a>
-        <a href="#"><img src="playlist.png"><p>Playlist</p></a>
-        <a href="#"><img src="messages.png"><p>Messages</p></a>
-        <a href="#"><img src="show-more.png"><p>Show more</p></a>
-        <hr>
-        <h3>SUBSCRIBED</h3>
-        <a href="https://www.youtube.com/@PhysicsWallah"><img src="simon.png"><p>Physics Wallah &bull; </p></a>
-        <a href="https://www.youtube.com/@AmanDhattarwal"><img src="tom.png"><p>Aman Dhattarwal &bull;</p></a>
-        <a href="https://www.youtube.com/@ApnaCollegeOfficial"><img src="megan.png"><p>Apna College</p></a>
-        <a href="https://www.youtube.com/@gajendrapurohit"><img src="Jack.png"><p>Dr Gajendra Purohit</p></a>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="banner">
-            <img src="banner.png" alt="">
-        </div>
-
-        <div class="list-container">
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=AETFvQonfV8"><img src="HanmanChalisa.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=1B048qCYGJY"><img src="Kishori Kux.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=qXw8sCwBLVE"><img src="MereSarkar.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=mjixdc3g9Cs"><img src="meri vinti.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=r6SbfF9FjTg"><img src="Aarambh.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=h1lT6cxwsPw"><img src="bajrang baad.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=Yuex2EnsGiY"><img src="jay ganesh.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=1qmPNot9NJs"><img src="shreekrishna.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=gaJR15qWTDA"><img src="bholabhandari.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=tBgNpc39FJk"><img src="adhurammadhuram.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=MB9m98cvq88"><img src="chotikishori.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=GNXL4dm49BI"><img src="tusumiran.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=igJHuojQHeo"><img src="shrreramchandra.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=Feoea8FQTI0"><img src="tumpremho.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=323VD1z5CQc"><img src="vrindavanjaungi.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=VCR5dQvhg_c"><img src="bolsuva.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=qmqInizmbqI"><img src="ramaayenge.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=kYFriF5zHMM"><img src="shivamrit.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="T Series Bhakti Sagar"><img src="agrnathdekhoge.png" class="thumbnail"></a>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>YouTube Clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="flex-div">
-        <div class="nav-left flex-div">
-            <img src="menu.png" class="menu-icon" alt="">
-            <a href="https://www.youtube.com/"><img src="logo.png" class="logo" alt=""></a>
-        </div>
-        <div class="nav-middle flex-div">
-            <div class="search-box flex-div">
-                <input type="text" placeholder="Search">
-                <img src="search.png" alt="">
-            </div>
-            <a href="https://www.youtube.com/"><img src="voice-search.png" class="mic-icon" alt=""></a>
-        </div>
-        <div class="nav-right flex-div">
-            <img src="upload.png" alt="">
-            <img src="more.png" alt="">
-            <img src="notification.png" alt="">
-            <a href="https://www.youtube.com/@sameershukla2355"><img src="nilava.jpeg" class="user-icon" alt=""></a>
-        </div>
-    </nav>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="#"><img src="home.png"><p>Home</p></a>
-        <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl"><img src="explore.png"><p>Trending</p></a>
-        <a href="#"><img src="subscriprion.png"><p>Subscription</p></a>
-        <hr>
-        <a href="#"><img src="library.png"><p>Library</p></a>
-        <a href="https://www.youtube.com/feed/history"><img src="history.png"><p>History</p></a>
-        <a href="#"><img src="playlist.png"><p>Playlist</p></a>
-        <a href="#"><img src="messages.png"><p>Messages</p></a>
-        <a href="#"><img src="show-more.png"><p>Show more</p></a>
-        <hr>
-        <h3>SUBSCRIBED</h3>
-        <a href="https://www.youtube.com/@PhysicsWallah"><img src="simon.png"><p>Physics Wallah &bull; </p></a>
-        <a href="https://www.youtube.com/@AmanDhattarwal"><img src="tom.png"><p>Aman Dhattarwal &bull;</p></a>
-        <a href="https://www.youtube.com/@ApnaCollegeOfficial"><img src="megan.png"><p>Apna College</p></a>
-        <a href="https://www.youtube.com/@gajendrapurohit"><img src="Jack.png"><p>Dr Gajendra Purohit</p></a>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="banner">
-            <img src="banner.png" alt="">
-        </div>
-
-        <div class="list-container">
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=AETFvQonfV8"><img src="HanmanChalisa.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=1B048qCYGJY"><img src="Kishori Kux.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=qXw8sCwBLVE"><img src="MereSarkar.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=mjixdc3g9Cs"><img src="meri vinti.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=r6SbfF9FjTg"><img src="Aarambh.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=h1lT6cxwsPw"><img src="bajrang baad.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=Yuex2EnsGiY"><img src="jay ganesh.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=1qmPNot9NJs"><img src="shreekrishna.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=gaJR15qWTDA"><img src="bholabhandari.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=tBgNpc39FJk"><img src="adhurammadhuram.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=MB9m98cvq88"><img src="chotikishori.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=GNXL4dm49BI"><img src="tusumiran.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=igJHuojQHeo"><img src="shrreramchandra.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=Feoea8FQTI0"><img src="tumpremho.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=323VD1z5CQc"><img src="vrindavanjaungi.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=VCR5dQvhg_c"><img src="bolsuva.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=qmqInizmbqI"><img src="ramaayenge.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="https://www.youtube.com/watch?v=kYFriF5zHMM"><img src="shivamrit.png" class="thumbnail"></a>
-            </div>
-            <div class="vid-list">
-                <a href="T Series Bhakti Sagar"><img src="agrnathdekhoge.png" class="thumbnail"></a>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
